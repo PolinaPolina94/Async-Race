@@ -1,0 +1,11 @@
+.title {
+  position: absolute;
+  top: 8%;
+  left: 36%;
+  font-size: 52px;
+  font-weight: 800;
+  font-family: 'Comic Sans MS', 'Marker Felt', 'Arial Rounded MT Bold', sans-serif;
+  text-transform: uppercase;
+  color: #e18f8f;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
