@@ -1,42 +1,72 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+html,
+body {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
   text-align: center;
+  background: #847989;
+  font-family: 'Comic Sans MS', 'Marker Felt', 'Arial Rounded MT Bold', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+/*.wrapper {*/
+/*  padding-top: 250px;*/
+/*}*/
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.race-container {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow:
+    0 0px 0 #eaddd6,
+    0 0 10px 2px rgba(227, 174, 139, 0.99);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  svg {
+    transform: scaleX(-1);
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid transparent;
+  border-image: repeating-linear-gradient(
+      90deg,
+      whitesmoke,
+      whitesmoke 65px,
+      transparent 35px,
+      transparent 100px
+    )
+    1;
 }
 
-.card {
-  padding: 2em;
+.car-model {
+  display: flex;
+  width: 100px;
+  height: 70px;
+  flex-direction: column;
+  align-content: center;
+  color: #f3ecf3;
+  padding: 10px 0;
 }
 
-.read-the-docs {
-  color: #888;
+.car-model:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: #e08d8d;
+  text-shadow:
+    0 0 8px rgb(131, 48, 9),
+    0 0 1px #fff;
 }
